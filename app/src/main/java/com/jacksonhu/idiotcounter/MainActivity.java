@@ -42,4 +42,18 @@ public class MainActivity extends AppCompatActivity
         preferenceEditor.putInt("count_idiot", count);
         preferenceEditor.apply();
     }
+
+    public void resetCounter(View view)
+    {
+        // Prepare shared preferences
+        SharedPreferences.Editor preferenceEditor = sharedPreferences.edit();
+
+        // Update GUI
+        TextView textView = (TextView)findViewById(R.id.countTextView);
+        textView.setText("0");
+
+        // Save to settings
+        preferenceEditor.putInt("count_idiot", 0);
+        preferenceEditor.apply();
+    }
 }
