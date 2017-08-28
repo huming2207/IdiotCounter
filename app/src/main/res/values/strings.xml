@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IdiotCounter</string>
+    <string name="add_idiot_button_text">Just met an idiot?</string>
+    <integer name="count_settings">0</integer>
+</resources>
